@@ -9,7 +9,7 @@ export default function Navbar() {
       </div>
       <div className="Navbar-middle">
         <a href="#">Shop</a>
-        <a href="#">About</a>
+        <a href="#">Home</a>
         <a href="#">Careers</a>
         <a href="#">Partnership</a>
         <a href="#">Contact</a>
