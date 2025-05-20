@@ -1,0 +1,10 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Milchella', sans-serif;
+  background-color: #cc92fc;
+  overflow: hidden;
+  transition: background-color 1s ease;
+}

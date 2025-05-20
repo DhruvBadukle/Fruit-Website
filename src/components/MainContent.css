@@ -1,0 +1,93 @@
+/* src/components/MainContent.css */
+.heading {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading-text {
+    font-size: 400px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.passionfruit {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.can-image {
+    width: 250px;
+    margin-top: 100px;
+    z-index: 3;
+    position: relative;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+    transition: all 0.5s ease;
+}
+
+.heading button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 20px 10px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+    z-index: 5;
+    position: relative;
+}
+
+.heading button:hover {
+    background-color: #555;
+}
+
+/* Animations */
+@keyframes imagePop {
+    0% { transform: scale(0.8) rotate(-10deg); opacity: 0; }
+    50% { transform: scale(1.05) rotate(5deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes textSlide {
+    0% { transform: translateX(-200px) translateY(-50%); opacity: 0; }
+    50% { transform: translateX(20px) translateY(-50%); opacity: 1; }
+    100% { transform: translateX(0) translateY(-50%); opacity: 1; }
+}
+
+@keyframes fruitMoveUp {
+    0% { transform: translate(-50%, 100%); opacity: 0; }
+    100% { transform: translate(-50%, -50%); opacity: 1; }
+}
+
+.animate-image {
+    animation: imagePop 1s ease forwards;
+}
+
+.animate-text-slide {
+    animation: textSlide 1s ease forwards;
+}
+
+.animate-fruit {
+    animation: fruitMoveUp 1s ease forwards;
+}

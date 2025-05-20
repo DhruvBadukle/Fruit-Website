@@ -1,0 +1,59 @@
+/* src/components/Navbar.css */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+}
+
+.Navbar-logo h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Navbar-middle {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.Navbar-middle a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.Navbar-middle a:hover {
+    color: white;
+}
+
+.Navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.Navbar-right a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.Navbar-right a:hover {
+    color: white;
+}
